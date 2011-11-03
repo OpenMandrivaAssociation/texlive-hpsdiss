@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/latex/contrib/hpsdiss
+# catalog-date 2007-01-07 11:47:19 +0100
+# catalog-license gpl
+# catalog-version 1.0
 Name:		texlive-hpsdiss
 Version:	1.0
 Release:	1
@@ -42,6 +48,7 @@ sample of the output is shown in the PDF documentation link.
 #- source
 %doc %{_texmfdistdir}/source/latex/hpsdiss/hpsdiss.dtx
 %doc %{_texmfdistdir}/source/latex/hpsdiss/hpsdiss.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -52,3 +59,5 @@ sample of the output is shown in the PDF documentation link.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
