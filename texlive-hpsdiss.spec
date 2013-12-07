@@ -6,7 +6,7 @@
 # catalog-version 1.0
 Name:		texlive-hpsdiss
 Version:	1.0
-Release:	4
+Release:	5
 Summary:	A dissertation class
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/hpsdiss
